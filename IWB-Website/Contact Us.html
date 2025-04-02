@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { 
+            background: linear-gradient(135deg, #007BFF, #0056b3); 
+            color: white; 
+            padding: 30px; 
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-bottom: 2px solid #004085;
+            border-radius: 8px; 
+        }
+        header h1 { margin: 0; font-size: 2.5em; }
+        nav { 
+            background: #0056b3; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 6px; 
+            margin: 10px auto; 
+            width: 90%; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a { color: white; margin: 15px; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 4px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #004085; }
+        section { 
+            padding: 40px; 
+            background: white; 
+            margin: 20px auto; 
+            width: 80%; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-bottom: 30px; 
+        }
+        .contact-info p, .contact-info a { 
+            margin: 10px 0; 
+            font-size: 1.1em; 
+            color: #333; 
+            text-decoration: none; 
+        }
+        .contact-info a { 
+            color: #007BFF; 
+        }
+        .social-links { 
+            display: flex; 
+            justify-content: center; 
+            margin-top: 20px; 
+        }
+        .social-links a { 
+            margin: 0 15px; 
+            color: #007BFF; 
+            text-decoration: none; 
+            font-size: 1.2em;
+        }
+        footer { 
+            background: #007BFF; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-header{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="software Tools.html">Software Tools</a>
+        <a href="stakeholders.html">Stakeholders</a>
+        <a href="contact us.html">Contacts</a>
+    </nav>
+    
+    <section>
+        <h2 class="contact-header">Get in Touch</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@iwb-recycle.com">info@iwb-recycle.com</a>, <a href="mailto:seabata@gmail.com">seabata@gmail.com</a></p>
+            <p>Phone: +266 123 4567, +266 5703 0197</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/">Facebook</a> | 
+            <a href="https://twitter.com/">Twitter</a> | 
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IWB - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
