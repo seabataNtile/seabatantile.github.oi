@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Tools for Electronic Recycling</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; 
+            padding: 0; 
+            text-align: justify; 
+            background-color: #f4f4f4; 
+        }
+        header { background: linear-gradient(135deg, #007BFF, #0056b3); color: white; padding: 14px; text-align: center;border-radius: 8px;
+         }
+        nav { background: #0056b3; padding: 15px; text-align: center; border-radius: 6px; margin: 10px auto; width: 90%; }
+        nav a { color: white; margin: 15px; text-decoration: none; font-weight: 600; padding: 15px; border-radius: 4px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #004085; }
+        section { padding: 15px; }
+        footer { background: #007BFF; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Only two tools */
+            gap: 20px;
+            background-color: #e9f7fb;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container > div {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .grid-container > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* One column on medium screens */
+            }
+        }
+
+        .tool-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .tool-description {
+            text-align: left;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .subscription-info {
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Software Tools for Electronic Recycling</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="software Tools.html">Software Tools</a>
+        <a href="stakeholders.html">Stakeholders</a>
+        <a href="contact us.html">Contacts</a>
+    </nav>
+    
+    <section>
+        <div class="grid-container">
+            <div>
+                <div class="tool-title">Secure Eraser</div>
+                <img src="secure Eraser.jpeg" alt="Secure Eraser">
+                <p class="tool-description">Permanently delete sensitive data to prevent recovery. Essential for secure hard drive recycling.</p>
+                <p class="subscription-info">Monthly: M 14.99 | Yearly: M 149.99</p>
+            </div>
+            <div>
+                <div class="tool-title">Drive Shredder</div>
+                <img src="Drive Shredder.jpg" alt="Drive Shredder">
+                <p class="tool-description">Completely wipe entire drives, ensuring data is unrecoverable. Ideal for recycling and data security.</p>
+                <p class="subscription-info">Monthly: M 24.99 | Yearly: M 249.99</p>
+            </div>
+            <div>
+                 <div class="tool-title">Inventory Tracker</div>
+                <img src="ITracker.png" alt="Inventory Tracker">
+                <p class="tool-description">Manage and track recycled electronic components, including RAM, motherboards, and more.</p>
+                <p class="subscription-info">Monthly: M 19.99 | Yearly: M 199.99</p>
+            </div>
+            <div>
+                <div class="tool-title">Data Compliance Reporter</div>
+                <img src="dcr.jpeg" alt="Data Compliance Reporter">
+                <p class="tool-description">Generate reports for data destruction and recycling compliance, ensuring legal standards are met.</p>
+                <p class="subscription-info">Monthly: M 29.99 | Yearly: M 299.99</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IWB - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

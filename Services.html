@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Square Grid</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; 
+            padding: 0; 
+            text-align: justify; 
+            background-color: #f4f4f4; 
+        }
+        header { background: linear-gradient(135deg, #007BFF, #0056b3); 
+            color: white; 
+            padding: 14px; 
+            text-align: center; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+        nav { background: #0056b3; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 6px; 
+            margin: 10px auto; 
+            width: 90%;
+         }
+        nav a { color: white; 
+            margin: 15px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            padding: 10px 15px; 
+            border-radius: 4px; 
+            transition: background-color 0.3s ease;
+         }
+        nav a:hover { background-color: #004085; }
+        section { padding: 30px; }
+        footer { background: #007BFF; 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed; 
+            bottom: 0; width: 100%; box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .square-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 2x2 grid */
+            gap: 20px;
+            background-color: #e9f7fb;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px; /* Limit the width for a more square appearance */
+            aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio (square) */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .square-grid > div {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .square-grid > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .square-grid img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .service-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .square-grid {
+                grid-template-columns: 1fr; /* Single column on small screens */
+                max-width: 90%; /* Adjust width for small screens */
+                aspect-ratio: auto; /* Remove aspect ratio constraint for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="software Tools.html">Software Tools</a>
+        <a href="stakeholders.html">Stakeholders</a>
+        <a href="contact us.html">Contacts</a>
+    </nav>
+    
+    <section>
+        <div class="square-grid">
+            <div>
+                <div class="service-title">RAM Recycling</div>
+                <img src="RAM.jpeg" height="200" width="220" alt="RAM Recycling">
+                <p class="service-description">Responsible recycling of RAM components.</p>
+            </div>
+            <div>
+                <div class="service-title">Hard Drive Recycling</div>
+                <img src="Hard Drive.jpg" height="200" width="220" alt="Hard Drive Recycling">
+                <p class="service-description">Secure recycling with data destruction.</p>
+            </div>
+            <div>
+                <div class="service-title">Motherboard Recycling</div>
+                <img src="motherboard.jpg" height="200" width="220" alt="Motherboard Recycling">
+                <p class="service-description">Recovery of precious metals from motherboards.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IWB - Electronic Recycling. All rights reserved.</p>
+    </footer>
+</body>
+</html>
